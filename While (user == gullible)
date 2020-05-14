@@ -1,0 +1,19 @@
+#include <iostream>
+int main()
+{   
+    int number = 0, count=-1; 
+    while ( number != count)
+    {   
+        std::cout << "Enter any number other than " << count+1 << ": ";
+        count++;
+        std::cin >> number;
+        if (count == 9)
+        {
+            std::cout << "Wow you're more patient then I am, you win!";
+            return 0;
+        }
+    }
+    std::cout << "Hey! You weren't supposed to enter " << count << "!";
+    
+    return 0;
+}
